@@ -15,6 +15,9 @@
 #ifdef FFBJOYSTICK
 #include "FFBJoystick.h"
 #endif
+#ifdef FFBPEDALS
+#include "FFBPedals.h"
+#endif
 #include "FFBoardMain.h"
 #ifdef TMCDEBUG
 #include "TMCDebugBridge.h"
@@ -40,6 +43,10 @@ const std::vector<class_entry<FFBoardMain>> class_registry =
 
 #ifdef FFBJOYSTICK
 		add_class<FFBJoystick,FFBoardMain>(),
+#endif
+
+#ifdef FFBPEDALS
+		//add_class<FFBPedals,FFBoardMain>(),
 #endif
 
 #ifdef FFBHIDEXT

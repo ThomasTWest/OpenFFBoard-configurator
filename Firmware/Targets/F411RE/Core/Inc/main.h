@@ -51,6 +51,7 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+void MX_USB_OTG_FS_PCD_Init(void);
 
 /* USER CODE BEGIN EFP */
 void RebootDFU();
@@ -75,10 +76,6 @@ void RebootDFU();
 #define AIN1_GPIO_Port GPIOA
 #define AIN0_Pin GPIO_PIN_1
 #define AIN0_GPIO_Port GPIOA
-#define ADC_VEXT_Pin GPIO_PIN_2
-#define ADC_VEXT_GPIO_Port GPIOA
-#define ADC_VINT_Pin GPIO_PIN_3
-#define ADC_VINT_GPIO_Port GPIOA
 #define SPI1_SS1_Pin GPIO_PIN_4
 #define SPI1_SS1_GPIO_Port GPIOA
 #define DRV_ENABLE_Pin GPIO_PIN_4
@@ -134,7 +131,7 @@ void RebootDFU();
 #define DIN4_GPIO_Port GPIOB
 #define DIN3_Pin GPIO_PIN_9
 #define DIN3_GPIO_Port GPIOB
-void   MX_USB_OTG_FS_PCD_Init(void);
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

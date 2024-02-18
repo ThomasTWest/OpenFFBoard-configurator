@@ -23,9 +23,10 @@
 // Main classes
 #define FFBWHEEL
 #define FFBJOYSTICK
-#define MIDI
+//#define MIDI
 #define TMCDEBUG
 #define FFBHIDEXT
+#define FFBPEDALS
 
 /*
  * FFBWheel uses 2 FFB axis descriptor instead of 1 axis.
@@ -36,15 +37,22 @@
 
 // Extra features
 #define LOCALBUTTONS
-#define SPIBUTTONS
+//#define SPIBUTTONS
 //#define SPIBUTTONS2 // Additional spi source. Not supported
-#define PCF8574BUTTONS // Requires I2C
-#define SHIFTERBUTTONS
+//#define PCF8574BUTTONS // Requires I2C
+//#define SHIFTERBUTTONS
 #define ANALOGAXES
 #define TMC4671DRIVER
 #define LOCALENCODER
-#define ADS111XANALOG // Requires I2C
+//#define ADS111XANALOG // Requires I2C
+#define PEDALS
+
+
 //#define PWMDRIVER // Not supported! No free timer
+
+
+
+
 //----------------------
 #define BTNFAILSAFE // Use user button to force board into failsafe mainclass
 #define DEBUGPIN // GP1 pin. see cpp target constants

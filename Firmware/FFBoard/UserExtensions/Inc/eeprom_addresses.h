@@ -209,4 +209,41 @@ uint16_t EE_ReadVariable(uint16_t VirtAddress, uint16_t* Data) will return 1 if 
 #define ADR_ADS111X_MAX_2 0x515
 #define ADR_ADS111X_MIN_3 0x516
 #define ADR_ADS111X_MAX_3 0x517
+
+#define ADR_PEDAL_1_STADDR 	  0x600	//Start address for pedal 1 configuration block
+#define ADR_PEDAL_1_CONF 	  0x600 // Same address as the start address
+#define ADR_PEDAL_1_xxx 	  0x601
+#define ADR_PEDAL_1_PMIN 	  0x602
+#define ADR_PEDAL_1_PMAX 	  0x603
+#define ADR_PEDAL_1_IPP_X_0   0x604
+#define ADR_PEDAL_1_IPP_Y_0	  0x605
+#define ADR_PEDAL_1_IPP_X_1   0x606
+#define ADR_PEDAL_1_IPP_Y_1	  0x607
+#define ADR_PEDAL_1_IPP_X_2   0x608
+#define ADR_PEDAL_1_IPP_Y_2   0x609
+#define ADR_PEDAL_1_IPP_X_3   0x60A
+#define ADR_PEDAL_1_IPP_Y_3   0x60B
+#define ADR_PEDAL_1_IPP_X_4   0x60C
+#define ADR_PEDAL_1_IPP_Y_4   0x60D
+#define ADR_PEDAL_1_IPP_X_5   0x60E
+#define ADR_PEDAL_1_IPP_Y_5   0x60F
+
+#define ADR_PEDAL_2_STADDR 	  0x610	//Start address for pedal 2 configuration block
+#define ADR_PEDAL_2_CONF 	  0x610
+#define ADR_PEDAL_2_xxx 	  0x611
+#define ADR_PEDAL_2_PMIN 	  0x612
+#define ADR_PEDAL_2_PMAX 	  0x613
+#define ADR_PEDAL_2_IPP_X_0   0x614
+#define ADR_PEDAL_2_IPP_Y_0	  0x615
+#define ADR_PEDAL_2_IPP_X_1   0x616
+#define ADR_PEDAL_2_IPP_Y_1	  0x617
+#define ADR_PEDAL_2_IPP_X_2   0x618
+#define ADR_PEDAL_2_IPP_Y_2   0x619
+#define ADR_PEDAL_2_IPP_X_3   0x61A
+#define ADR_PEDAL_2_IPP_Y_3   0x61B
+#define ADR_PEDAL_2_IPP_X_4   0x61C
+#define ADR_PEDAL_2_IPP_Y_4   0x61D
+#define ADR_PEDAL_2_IPP_X_5   0x61E
+#define ADR_PEDAL_2_IPP_Y_5   0x61F
+
 #endif /* EEPROM_ADDRESSES_H_ */

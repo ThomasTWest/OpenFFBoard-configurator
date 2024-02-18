@@ -41,7 +41,8 @@ enum class ErrorCode : uint32_t{
 
 			axisOutOfRange = 31,
 
-			externalConfigurationError = 32
+			externalConfigurationError = 32,
+			pedalsError = 33
 };
 /*
  * Error type for severity

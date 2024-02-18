@@ -33,6 +33,10 @@ static const uint8_t SW_VERSION_INT[3] = {1,14,2}; // Version as array. 8 bit ea
 #define AXIS2_FFB_HID_DESC
 #endif
 
+#ifdef FFBPEDALS
+#define AXIS2_FFB_HID_DESC
+#endif
+
 #ifndef HSPIDRV
 #undef TMC4671DRIVER
 #endif
