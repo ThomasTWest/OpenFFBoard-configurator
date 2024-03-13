@@ -74,7 +74,7 @@ extern UART_HandleTypeDef huart1;
 
 extern ADC_HandleTypeDef hadc1;
 // ADC Channels
-#define ADC1_CHANNELS 9 	// how many analog input values to be read by dma
+#define ADC1_CHANNELS 7 	// how many analog input values to be read by dma
 
 #define VSENSE_HADC hadc1
 #define ADC_CHAN_VINT 7	// adc buffer index of internal voltage sense

@@ -48,6 +48,7 @@ uint16_t getExtV(){
 }
 
 void brakeCheck(){
+/*
 	if(maxVoltage == 0 || brake_failure){
 		return;
 	}
@@ -71,5 +72,5 @@ void brakeCheck(){
 	}else{
 		HAL_GPIO_WritePin(DRV_BRAKE_GPIO_Port,DRV_BRAKE_Pin, braking_flag ? GPIO_PIN_SET:GPIO_PIN_RESET);
 	}
-
+*/
 }

@@ -212,7 +212,7 @@ uint16_t EE_ReadVariable(uint16_t VirtAddress, uint16_t* Data) will return 1 if 
 
 #define ADR_PEDAL_1_STADDR 	  0x600	//Start address for pedal 1 configuration block
 #define ADR_PEDAL_1_CONF 	  0x600 // Same address as the start address
-#define ADR_PEDAL_1_xxx 	  0x601
+#define ADR_PEDAL_1_NORM 	  0x601
 #define ADR_PEDAL_1_PMIN 	  0x602
 #define ADR_PEDAL_1_PMAX 	  0x603
 #define ADR_PEDAL_1_IPP_X_0   0x604
@@ -227,23 +227,55 @@ uint16_t EE_ReadVariable(uint16_t VirtAddress, uint16_t* Data) will return 1 if 
 #define ADR_PEDAL_1_IPP_Y_4   0x60D
 #define ADR_PEDAL_1_IPP_X_5   0x60E
 #define ADR_PEDAL_1_IPP_Y_5   0x60F
+#define ADR_PEDAL_1_BOT_DZ    0x610	//Bottom deadzone
+#define ADR_PEDAL_1_TOP_DZ    0x611	//Top deadzone
+#define ADR_PEDAL_1_KAL_ME    0x612 //KalmanFilter.setMeasurementError(20.0);
+#define ADR_PEDAL_1_KAL_PN    0x613 //KalmanFilter.setProcessNoise(0.3);
 
-#define ADR_PEDAL_2_STADDR 	  0x610	//Start address for pedal 2 configuration block
-#define ADR_PEDAL_2_CONF 	  0x610
-#define ADR_PEDAL_2_xxx 	  0x611
-#define ADR_PEDAL_2_PMIN 	  0x612
-#define ADR_PEDAL_2_PMAX 	  0x613
-#define ADR_PEDAL_2_IPP_X_0   0x614
-#define ADR_PEDAL_2_IPP_Y_0	  0x615
-#define ADR_PEDAL_2_IPP_X_1   0x616
-#define ADR_PEDAL_2_IPP_Y_1	  0x617
-#define ADR_PEDAL_2_IPP_X_2   0x618
-#define ADR_PEDAL_2_IPP_Y_2   0x619
-#define ADR_PEDAL_2_IPP_X_3   0x61A
-#define ADR_PEDAL_2_IPP_Y_3   0x61B
-#define ADR_PEDAL_2_IPP_X_4   0x61C
-#define ADR_PEDAL_2_IPP_Y_4   0x61D
-#define ADR_PEDAL_2_IPP_X_5   0x61E
-#define ADR_PEDAL_2_IPP_Y_5   0x61F
+#define ADR_PEDAL_2_STADDR 	  0x620	//Start address for pedal 2 configuration block
+#define ADR_PEDAL_2_CONF 	  0x620
+#define ADR_PEDAL_2_NORM 	  0x621
+#define ADR_PEDAL_2_PMIN 	  0x622
+#define ADR_PEDAL_2_PMAX 	  0x623
+#define ADR_PEDAL_2_IPP_X_0   0x624
+#define ADR_PEDAL_2_IPP_Y_0	  0x625
+#define ADR_PEDAL_2_IPP_X_1   0x626
+#define ADR_PEDAL_2_IPP_Y_1	  0x627
+#define ADR_PEDAL_2_IPP_X_2   0x628
+#define ADR_PEDAL_2_IPP_Y_2   0x629
+#define ADR_PEDAL_2_IPP_X_3   0x62A
+#define ADR_PEDAL_2_IPP_Y_3   0x62B
+#define ADR_PEDAL_2_IPP_X_4   0x62C
+#define ADR_PEDAL_2_IPP_Y_4   0x62D
+#define ADR_PEDAL_2_IPP_X_5   0x62E
+#define ADR_PEDAL_2_IPP_Y_5   0x62F
+#define ADR_PEDAL_2_BOT_DZ    0x630	//Bottom deadzone
+#define ADR_PEDAL_2_TOP_DZ    0x631	//Top deadzone
+#define ADR_PEDAL_2_KAL_ME    0x632 //KalmanFilter.setMeasurementError(20.0);
+#define ADR_PEDAL_2_KAL_PN    0x633 //KalmanFilter.setProcessNoise(0.3);
+
+
+#define ADR_PEDAL_3_STADDR 	  0x640	//Start address for pedal 3 configuration block
+#define ADR_PEDAL_3_CONF 	  0x640
+#define ADR_PEDAL_3_NORM 	  0x641
+#define ADR_PEDAL_3_PMIN 	  0x642
+#define ADR_PEDAL_3_PMAX 	  0x643
+#define ADR_PEDAL_3_IPP_X_0   0x644
+#define ADR_PEDAL_3_IPP_Y_0	  0x645
+#define ADR_PEDAL_3_IPP_X_1   0x646
+#define ADR_PEDAL_3_IPP_Y_1	  0x647
+#define ADR_PEDAL_3_IPP_X_2   0x648
+#define ADR_PEDAL_3_IPP_Y_2   0x649
+#define ADR_PEDAL_3_IPP_X_3   0x64A
+#define ADR_PEDAL_3_IPP_Y_3   0x64B
+#define ADR_PEDAL_3_IPP_X_4   0x64C
+#define ADR_PEDAL_3_IPP_Y_4   0x64D
+#define ADR_PEDAL_3_IPP_X_5   0x64E
+#define ADR_PEDAL_3_IPP_Y_5   0x64F
+#define ADR_PEDAL_3_BOT_DZ    0x650	//Bottom deadzone
+#define ADR_PEDAL_3_TOP_DZ    0x651	//Top deadzone
+#define ADR_PEDAL_3_KAL_ME    0x652 //KalmanFilter.setMeasurementError(20.0);
+#define ADR_PEDAL_3_KAL_PN    0x653 //KalmanFilter.setProcessNoise(0.3);
+
 
 #endif /* EEPROM_ADDRESSES_H_ */
